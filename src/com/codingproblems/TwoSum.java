@@ -1,0 +1,18 @@
+package com.codingproblems;
+
+public class TwoSum {
+    public int[] twoSum(int[] nums, int target){
+        int[] res = new int[2];
+        for (int i = 0; i < nums.length; i++){
+            for (int j = i + 1; j < nums.length; j++) {
+                System.out.println(i);
+                System.out.println(j);
+                if(nums[i] + nums[j] == target){
+                    return new int[]{i , j};
+                }
+            }
+        }
+        System.out.println("there is no match");
+        return null;
+    }
+}
